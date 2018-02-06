@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coming Soon</title>
+	<link rel="stylesheet" type="text/css" href="csstyle.css">
+
+	<style >
+		nav
+		{
+			position:fixed ;
+			width: 100%;
+			top:22%;
+			background-color: #555;
+			text-align: center;
+			padding:1%;
+			transition: all 1s ease;
+		}
+		nav .hidden
+		{
+			transform:translate3d(0,180%,0);
+		}
+		nav ul li
+		{
+			display: inline-block;
+			margin-right: 10%;
+		}
+		nav ul li:last child
+		{
+			margin-right: 0;
+		}
+		nav ul li a
+		{
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #fff;
+			font-family: arial,san-serif;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<img src="logo/logo2.jpg">
+	</div>
+
+	<nav>
+		<ul>
+			<li><a href=""></a>Home</li>
+			<li><a href=""></a>Event</li>
+			<li><a href=""></a>Sponsors</li>
+			<li><a href=""></a>Contact us</li>
+			<li><a href=""></a>About Us</li>
+
+		</ul>
+
+	</nav>
+	<div class="content">
+		<img style="height: 200%" src="logo/events-heavenly-header1.jpg">
+		<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+		<script>
+			(function () {
+				var documentElen= $(document),
+				nav =$('nav'),
+				lastScrollTop=$(this).lastScrollTop();
+
+				if(currentScrollTop > lastScrollTop) nav.addClass('hidden');
+				else nav.removeclass('hidden');
+				lastScrollTop=currentScrollTop;
+			
+			});
+
+		</script>
+		
+	</div>
+
+</body>
+</html>
