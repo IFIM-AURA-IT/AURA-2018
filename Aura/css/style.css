@@ -1,6 +1,10 @@
-@font-face {
+/*@font-face {
   font-family: decade;
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/decade.ttf");
+}*/
+@font-face{
+ font-family:'digital-clock-font';
+ src: url('fonts/digital-7.ttf');
 }
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -38,13 +42,18 @@ body {
 
 }
 .p {
-  color:green;
+  color:#7ef3f3;
   
-  font-size: 60px;
-  margin-top:0px;
-  left: 430px;
-  top:440px;
+  font-size: 55 px;
+  margin-top:40%;
+
+  /*top:420px;*/
   position: relative;
+  background-color: none;
+  text-align: center;
+  font-family:'digital-clock-font';
+  /*font-family:sans-serif;*/
+  /*Intellecta Design;*/
 }
 
 .half {
@@ -284,7 +293,7 @@ body {
   opacity: 1;
   -webkit-transition-delay: 1.5s;
   -moz-transition-delay: 1.5s;
-  -ms-transition-delay: 1.5s;
+  -ms-transition-delay: 1.5;
   -o-transition-delay: 1.5s;
   transition-delay: 1.5s;
   -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
@@ -305,4 +314,11 @@ body {
   -o-transform: scale(1);
   transform: scale(1);
   opacity: 1;
+}
+.rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
